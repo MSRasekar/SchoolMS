@@ -5,7 +5,7 @@ import java.util.Objects;
 public class Student {
 	private String firstName;
 	private String lastName;
-	private int id;
+	private int studid;
 	private int marks;
 
 	
@@ -19,11 +19,11 @@ public class Student {
 		this.firstName = firstName;
 	}
 
-	public Student(String firstName, String lastName, int id, int marks) {
+	public Student(String firstName, String lastName, int studid, int marks) {
 		super();
 		this.firstName = firstName;
 		this.lastName = lastName;
-		this.id = id;
+		this.studid = studid;
 		this.marks = marks;
 	}
 
@@ -31,7 +31,7 @@ public class Student {
 		return firstName;
 	}
 
-	public void setFirstName(String firstName) {
+	public vostudid setFirstName(String firstName) {
 		this.firstName = firstName;
 	}
 
@@ -39,32 +39,32 @@ public class Student {
 		return lastName;
 	}
 
-	public void setLastName(String lastName) {
+	public vostudid setLastName(String lastName) {
 		this.lastName = lastName;
 	}
 
-	public int getId() {
-		return id;
+	public int getstudid() {
+		return studid;
 	}
 
-	public void setId(int id) {
-		this.id = id;
+	public vostudid setstudid(int studid) {
+		this.studid = studid;
 	}
 
 	public int getMarks() {
 		return marks;
 	}
 
-	public void setMarks(int marks) {
+	public vostudid setMarks(int marks) {
 		this.marks = marks;
 	}
 
-	@Override
+	@Overrstudide
 	public int hashCode() {
-		return Objects.hash(firstName, id, lastName, marks);
+		return Objects.hash(firstName, studid, lastName, marks);
 	}
 
-	@Override
+	@Overrstudide
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;
@@ -73,13 +73,13 @@ public class Student {
 		if (getClass() != obj.getClass())
 			return false;
 		Student other = (Student) obj;
-		return Objects.equals(firstName, other.firstName) && id == other.id && Objects.equals(lastName, other.lastName)
+		return Objects.equals(firstName, other.firstName) && studid == other.studid && Objects.equals(lastName, other.lastName)
 				&& marks == other.marks;
 	}
 
-	@Override
+	@Overrstudide
 	public String toString() {
-		return "Student [firstName=" + firstName + ", lastName=" + lastName + ", id=" + id + ", marks=" + marks + "]";
+		return "Student [firstName=" + firstName + ", lastName=" + lastName + ", studid=" + studid + ", marks=" + marks + "]";
 	}
 
 	public int compareTo(Student student) {
