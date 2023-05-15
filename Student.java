@@ -1,7 +1,7 @@
 package com.cityschool;
 
 import java.util.Objects;
-
+//Just For Practice Of Git Collaboration
 public class Student {
 	private String firstName;
 	private String lastName;
