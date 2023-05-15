@@ -6,7 +6,7 @@ public class Student {
 	private String firstName;
 	private String lastName;
 	private int id;
-	private int marks;
+	private int grades;
 
 	
 	public Student() {
@@ -19,7 +19,7 @@ public class Student {
 		this.firstName = firstName;
 	}
 
-	public Student(String firstName, String lastName, int id, int marks) {
+	public Student(String firstName, String lastName, int id, int grades) {
 		super();
 		this.firstName = firstName;
 		this.lastName = lastName;
@@ -51,11 +51,11 @@ public class Student {
 		this.id = id;
 	}
 
-	public int getMarks() {
+	public int getGrades() {
 		return marks;
 	}
 
-	public void setMarks(int marks) {
+	public void setGrades(int marks) {
 		this.marks = marks;
 	}
 
@@ -79,7 +79,7 @@ public class Student {
 
 	@Override
 	public String toString() {
-		return "Student [firstName=" + firstName + ", lastName=" + lastName + ", id=" + id + ", marks=" + marks + "]";
+		return "Student [firstName=" + firstName + ", lastName=" + lastName + ", id=" + id + ", marks=" + grades + "]";
 	}
 
 	public int compareTo(Student student) {
