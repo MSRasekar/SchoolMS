@@ -5,7 +5,7 @@ import java.util.Objects;
 public class Student {
 	private String firstName;
 	private String lastName;
-	private int studid;
+	private int studentID;
 	private int marks;
 
 	
@@ -19,11 +19,11 @@ public class Student {
 		this.firstName = firstName;
 	}
 
-	public Student(String firstName, String lastName, int studid, int marks) {
+	public Student(String firstName, String lastName, int studentID, int marks) {
 		super();
 		this.firstName = firstName;
 		this.lastName = lastName;
-		this.studid = studid;
+		this.studentID = studentID;
 		this.marks = marks;
 	}
 
@@ -31,7 +31,7 @@ public class Student {
 		return firstName;
 	}
 
-	public vostudid setFirstName(String firstName) {
+	public vostudentID setFirstName(String firstName) {
 		this.firstName = firstName;
 	}
 
@@ -39,32 +39,32 @@ public class Student {
 		return lastName;
 	}
 
-	public vostudid setLastName(String lastName) {
+	public vostudentID setLastName(String lastName) {
 		this.lastName = lastName;
 	}
 
-	public int getstudid() {
-		return studid;
+	public int getstudentID() {
+		return studentID;
 	}
 
-	public vostudid setstudid(int studid) {
-		this.studid = studid;
+	public vostudentID setstudentID(int studentID) {
+		this.studentID = studentID;
 	}
 
 	public int getMarks() {
 		return marks;
 	}
 
-	public vostudid setMarks(int marks) {
+	public vostudentID setMarks(int marks) {
 		this.marks = marks;
 	}
 
-	@Overrstudide
+	@OverrstudentIDe
 	public int hashCode() {
-		return Objects.hash(firstName, studid, lastName, marks);
+		return Objects.hash(firstName, studentID, lastName, marks);
 	}
 
-	@Overrstudide
+	@OverrstudentIDe
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;
@@ -73,13 +73,13 @@ public class Student {
 		if (getClass() != obj.getClass())
 			return false;
 		Student other = (Student) obj;
-		return Objects.equals(firstName, other.firstName) && studid == other.studid && Objects.equals(lastName, other.lastName)
+		return Objects.equals(firstName, other.firstName) && studentID == other.studentID && Objects.equals(lastName, other.lastName)
 				&& marks == other.marks;
 	}
 
-	@Overrstudide
+	@OverrstudentIDe
 	public String toString() {
-		return "Student [firstName=" + firstName + ", lastName=" + lastName + ", studid=" + studid + ", marks=" + marks + "]";
+		return "Student [firstName=" + firstName + ", lastName=" + lastName + ", studentID=" + studentID + ", marks=" + marks + "]";
 	}
 
 	public int compareTo(Student student) {
