@@ -16,10 +16,10 @@ public class StudentRecord {
 		System.out.println("Enter Student ID:");
 		int id = sc.nextInt();
 
-		System.out.println("Enter Student marks :");
+		System.out.println("Enter Student grades :");
 		int marks = sc.nextInt();
 
-		Student student = new Student(firstName, lastName, id, marks);
+		Student student = new Student(firstName, lastName, id, grades);
 
 		students.add(student);
 
@@ -78,7 +78,7 @@ public class StudentRecord {
 			pass++;
 			for (int j = i + 1; j < student.size(); j++) {
 				itr++;
-				if (student.get(i).getMarks() > student.get(j).getMarks()) {
+				if (student.get(i).getGrades() > student.get(j).getGrades()) {
 					swap++;
 					student = swap(student, i, j);
 				}
@@ -108,7 +108,7 @@ public class StudentRecord {
 			pass++;
 			for (int i = 0; i < student.size() - j; i++) {
 				itr++;
-				if (student.get(i).getMarks() > student.get(i + 1).getMarks()) {
+				if (student.get(i).getGrades() > student.get(i + 1).getGrades()) {
 					swap++;
 					student = swap(student, i, i + 1);
 					flag = true;
@@ -126,7 +126,7 @@ public class StudentRecord {
 		for (int i = 1; i < student.size(); i++) {
 			int j;
 			Student temp = student.get(i);
-			for (j = i - 1; j >= 0 && student.get(j).getMarks() > temp.getMarks(); j--) { // if first condition false
+			for (j = i - 1; j >= 0 && student.get(j).getGrades() > temp.getGrades(); j--) { // if first condition false
 				// second condition is not
 				// evaluated ==> &&
 				//				arr[j+1] = arr[j];
