@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
-
+//made changes by sudeep
 public class StudentManagementSystem {
 
 	public static void searchMenu(Scanner sc, List<Student> student) {
@@ -75,18 +75,18 @@ public class StudentManagementSystem {
 			case 1:
 				// Selection sort
 				System.out.println(
-						"\nSorted by student marks using selection sort:\n " + StudentRecord.selectionSortByMarks(student).toString());
+						"\nSorted by student grades using selection sort:\n " + StudentRecord.selectionSortByGrades(student).toString());
 				break;
 			case 2:
 				// Bubble sort
 				System.out.println(
-						"\nSorted by student marks using bubble sort:\n " + StudentRecord.bubbleSortByMarks(student).toString());
+						"\nSorted by student grades using bubble sort:\n " + StudentRecord.bubbleSortByGrades(student).toString());
 
 				break;
 			case 3:
 				// Insertion sort
 				System.out.println(
-						"\nSorted by student marks using Insertion sort:\n " + StudentRecord.insertionSortByMarks(student).toString());
+						"\nSorted by student gardes using Insertion sort:\n " + StudentRecord.insertionSortByGrades(student).toString());
 
 				break;
 			case 4:

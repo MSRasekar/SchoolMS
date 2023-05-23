@@ -5,8 +5,10 @@ import java.util.Objects;
 public class Student {
 	private String firstName;
 	private String lastName;
+
 	private int studentID;
 	private int marks;
+
 
 	
 	public Student() {
@@ -20,6 +22,7 @@ public class Student {
 	}
 
 	public Student(String firstName, String lastName, int studentID, int marks) {
+
 		super();
 		this.firstName = firstName;
 		this.lastName = lastName;
@@ -51,11 +54,13 @@ public class Student {
 		this.studentID = studentID;
 	}
 
-	public int getMarks() {
+	public int getGrades() {
 		return marks;
 	}
 
+
 	public vostudentID setMarks(int marks) {
+
 		this.marks = marks;
 	}
 
@@ -79,7 +84,9 @@ public class Student {
 
 	@OverrstudentIDe
 	public String toString() {
+
 		return "Student [firstName=" + firstName + ", lastName=" + lastName + ", studentID=" + studentID + ", marks=" + marks + "]";
+
 	}
 
 	public int compareTo(Student student) {
